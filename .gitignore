@@ -60,3 +60,5 @@ validate/log.json
 
 ### NPM ###
 package-lock.json
+
+.idea/

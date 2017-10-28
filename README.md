@@ -41,8 +41,8 @@ $ htmlproofer ./_site
 ```
 
 [license-image]: https://img.shields.io/badge/license-ISC-blue.svg
-[license-url]: https://github.com/segtio/amionglerie/blob/master/LICENSE
-[travis-image]: https://travis-ci.org/segtio/amionglerie.svg?branch=master
-[travis-url]: https://travis-ci.org/segtio/amionglerie
-[dependencyci-image]: https://dependencyci.com/github/segtio/amionglerie/badge
-[dependencyci-url]: https://dependencyci.com/github/segtio/amionglerie
+[license-url]: https://github.com/madicorp/amionglerie/blob/master/LICENSE
+[travis-image]: https://travis-ci.org/madicorp/amionglerie.svg?branch=master
+[travis-url]: https://travis-ci.org/madicorp/amionglerie
+[dependencyci-image]: https://dependencyci.com/github/madicorp/amionglerie/badge
+[dependencyci-url]: https://dependencyci.com/github/madicorp/amionglerie
