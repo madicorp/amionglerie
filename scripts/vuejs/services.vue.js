@@ -1,0 +1,1 @@
+"use strict";new Vue({delimiters:["<%","%>"],el:"#services",firebase:{services:{source:db.ref("services"),asObject:!0}}});
