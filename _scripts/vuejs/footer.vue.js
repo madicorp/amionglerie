@@ -4,7 +4,7 @@ new Vue({
     delimiters: ['<%', '%>'],
     el: '#footer',
     firebase: {
-        home: {
+        footer: {
             source: db.ref("footer"),
             asObject: true,
         }
