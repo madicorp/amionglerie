@@ -1,24 +1,215 @@
 ---
 layout: default
+menu: home
 ---
+{% include slider.html %}
+<div id="home">
+    <section class="ds intro_section">
+        <div class="flexslider vertical-nav">
+            <ul class="slides">
 
-<div class="home">
+                <li>
+                    <img src="/images/ami.png" alt="">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 text-center text-md-right">
+                                <div class="slide_description_wrapper">
+                                    <div class="slide_description">
+                                        <div class="intro-layer" data-animation="slideExpandUp">
+                                            <h2 class="big margin_0">Ami Onglerie</h2>
+                                            <h2 class="muellerhoff topmargin_5 bottommargin_50 highlight">
+                                                Saviez vous que ..
+                                            </h2>
+                                        </div>
+                                        <div class="intro-layer" data-animation="slideExpandUp">
+                                            <p class="entry-excerpt bottommargin_30">
+                                                <% home.amionglerie.intro %>
+                                            </p>
+                                            <p>
+                                                <% home.amionglerie.text %>
+                                            </p>
+                                            <a href="/a-propos" class="theme_button color1 topmargin_20">En savoir +</a>
+                                        </div>
+                                    </div>
+                                    <!-- eof .slide_description -->
+                                </div>
+                                <!-- eof .slide_description_wrapper -->
+                            </div>
+                            <!-- eof .col-* -->
+                        </div>
+                        <!-- eof .row -->
+                    </div>
+                    <!-- eof .container -->
+                </li>
 
-  <h1 class="page-heading">Posts</h1>
+                <li>
+                    <img src="/images/service.png" alt="">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 text-center text-md-right">
+                                <div class="slide_description_wrapper">
+                                    <div class="slide_description">
+                                        <div class="intro-layer" data-animation="slideExpandUp">
+                                            <h2 class="big margin_0">Nos Services</h2>
+                                            <h2 class="muellerhoff topmargin_5 bottommargin_50 highlight">
+                                                Découvrez..
+                                            </h2>
+                                        </div>
+                                        <div class="intro-layer" data-animation="slideExpandUp">
+                                            <div v-for="service in home.services" class="media bottommargin_30">
+                                                <div class="media-left">
+                                                    <div v-bind:class="service.icon"></div>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="topmargin_0 bottommargin_5">
+                                                        <a href="#"><% service.title %></a>
+                                                    </h4>
+                                                    <p class="bottommargin_0">
+                                                        <% service.text %>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- eof .slide_description -->
+                                </div>
+                                <!-- eof .slide_description_wrapper -->
+                            </div>
+                            <!-- eof .col-* -->
+                        </div>
+                        <!-- eof .row -->
+                    </div>
+                    <!-- eof .container -->
+                </li>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                <li>
+                    <img src="/images/academie.png" alt="">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 text-center text-md-right">
+                                <div class="slide_description_wrapper">
+                                    <div class="slide_description">
+                                        <div class="intro-layer" data-animation="slideExpandUp">
+                                            <h2 class="big margin_0">A Propos de l'academie</h2>
+                                            <h2 class="muellerhoff topmargin_5 bottommargin_50 highlight">
+                                                Devenir Prothésiste ongulaire ?
+                                            </h2>
+                                        </div>
+                                        <div class="intro-layer" data-animation="slideExpandUp">
+                                            <p class="entry-excerpt bottommargin_30">
+                                                <% home.academy.intro %>
+                                            </p>
+                                            <p>
+                                                <% home.academy.text %>
+                                            </p>
+                                            <a href="/a-propos" class="theme_button color1 topmargin_20">En savoir +</a>
+                                        </div>
+                                    </div>
+                                    <!-- eof .slide_description -->
+                                </div>
+                                <!-- eof .slide_description_wrapper -->
+                            </div>
+                            <!-- eof .col-* -->
+                        </div>
+                        <!-- eof .row -->
+                    </div>
+                    <!-- eof .container -->
+                </li>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+                <li>
+                    <img src="/images/shop.png" alt="">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 text-center text-md-right">
+                                <div class="slide_description_wrapper">
+                                    <div class="slide_description">
+                                        <div class="intro-layer" data-animation="slideExpandUp">
+                                            <h2 class="big margin_0">La Boutique</h2>
+                                            <h2 class="muellerhoff topmargin_5 bottommargin_50 highlight">
+                                                Quelque chose que vous devez savoir
+                                            </h2>
+                                        </div>
+                                        <div class="intro-layer" data-animation="slideExpandUp">
+                                            <p class="entry-excerpt bottommargin_30">
+                                                <% home.shop.intro %>
+                                            </p>
+                                            <p>
+                                                <% home.shop.text %>
+                                            </p>
+                                            <a href="/boutique" class="theme_button color1 topmargin_20">Voir les produits</a>
+                                        </div>
+                                    </div>
+                                    <!-- eof .slide_description -->
+                                </div>
+                                <!-- eof .slide_description_wrapper -->
+                            </div>
+                            <!-- eof .col-* -->
+                        </div>
+                        <!-- eof .row -->
+                    </div>
+                    <!-- eof .container -->
+                </li>
+            </ul>
+        </div>
+        <!-- eof flexslider -->
+    </section>
+    <section class="ds parallax calltoaction section_padding_100"
+             style="background-image: url('/images/parallax/bg_parallax_2.jpg')">
+        <div class="container">
+            <div class="row bottommargin_20">
+                <div class="col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8 text-center">
+                    <h2 class="big topmargin_0">
+                        Nos Packages Beauté
+                    </h2>
+                    <p class="entry-excerpt bottommargin_30">
+                        Venez vous faire choyer le temps d’une parenthèse de beauté.
+                    </p>
+                    <p>
+                        <% home.package.text %>
+                    </p>
+                </div>
+            </div>
+            <div class="row display_table_md">
+                <div v-for="pack in home.package.packs"
+                     class="col-md-4 display_table_cell_md">
 
+                    <div class="price-table with_background">
+                        <div class="plan-name text-uppercase darkgrey_bg_color">
+                            <h3><% pack.title %></h3>
+                        </div>
+                        <div class="plan-price cs">
+                            <span><% pack.price %></span>
+                            <span>CFA</span>
+                            <p><% pack.unity %></p>
+                        </div>
+                        <div class="features-list">
+                            <ul>
+                                <li v-for="spec in pack.specs"><% spec %></li>
+                            </ul>
+                        </div>
+                    </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include blog_section.html %}
+    <section class="ds map muted_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <div class="teaser text-center">
+                        <div class="teaser_icon black size_normal">
+                            <i class="rt-icon2-location2 highlight"></i>
+                        </div>
+                    </div>
+                    <a href="#" class="theme_button">Siprés 2 villa n° 23 Dakar - SÉNÉGAL</a>
+                </div>
+            </div>
 
+        </div>
+    </section>
 </div>
+{% include contact_section.html %}
+
+<script type="text/javascript" src='{{ "/scripts/vuejs/home.vue.js" | relative_url }}'></script>

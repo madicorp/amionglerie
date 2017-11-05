@@ -62,3 +62,5 @@ validate/log.json
 package-lock.json
 
 .idea/
+
+firedata

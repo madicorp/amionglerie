@@ -1,0 +1,16 @@
+<section id="slider" class="ds ms intro_section page_mainslider">
+    <div class="owl-carousel page_maincarousel" data-margin="0" data-nav="true" data-loop="false" data-items="4">
+
+        <div v-for="slide in root.slider">
+            <div class="vertical-item maincarousel-item content-absolute cs">
+                <div class="item-media">
+                    <fire-img :url="slide"></fire-img>
+                    <div class="media-links">
+                        <a class="abs-link" title="" href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript" src='{{ "/scripts/vuejs/slider.vue.js" | relative_url }}'></script>

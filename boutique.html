@@ -1,0 +1,36 @@
+---
+layout: default
+title: Boutique
+permalink: /boutique/
+menu: shop
+---
+<div id="shop">
+    <section class="ds page_models models_square gorizontal_padding section_padding_80 columns_padding_0">
+        <div class="container-fluid">
+            <div class="row bottommargin_50 boxed-padding">
+                <div class="col-lg-7">
+                    <div class="filters isotope_filters inline-block margin_0">
+                        <a href="#" data-filter="*" class="selected">Tous</a>
+                        <a v-for="type in shop.types" href="#" v-bind:data-filter="'.'+ format(type.name)">
+                            <% type.name%>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-lg-right">
+                    <form class="form-inline models-orderby">
+                        <input type="text" aria-required="true" size="30" value="" id="search" class="form-control" placeholder="Rechercher">
+                    </form>
+                </div>
+            </div>
+            <div class="isotope_container isotope row masonry-layout bottommargin_20" data-filters=".isotope_filters">
+                <div v-for="item in shop.items" v-bind:class='"isotope-item col-lg-3 col-md-4 col-sm-6 " + format(item.type)'>
+
+                    <item-content :item="item" :url="item.photo"></item-content>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>
+<script type="text/javascript" src='{{ "/scripts/vuejs/shop.vue.js" | relative_url }}'></script>

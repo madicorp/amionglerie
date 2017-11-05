@@ -1,0 +1,63 @@
+---
+layout: default
+title: Services
+permalink: /services/
+menu: services
+---
+<div id="services">
+    <section class="ds section_padding_top_100 section_padding_bottom_100">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 to_animate" data-animation="scaleAppear">
+
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li v-for="(type, index) in services.types" v-bind:class="{ active: index==0 }">
+                            <a v-bind:href="'#tab'+index" role="tab" data-toggle="tab"><% type.name %></a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content no-border top-color-border">
+                        <div v-for="(type, index) in services.types"
+                             v-bind:class="['tab-pane fade in', (index==0)? 'active':'']"
+                             v-bind:id="'tab'+index">
+
+                            <div class="table-responsive">
+                                <table class="table_template">
+                                    <thead class="light">
+                                    <tr>
+                                        <th>Nom</th>
+                                        <th>Description</th>
+                                        <th>Durée (en minute)</th>
+                                        <th>Prix</th>
+                                        <th>Gallerie</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="grey">
+                                    <tr v-for="performance in type.performances">
+                                        <td><% performance.name %></td>
+                                        <td><% performance.description %></td>
+                                        <td><% performance.time %></td>
+                                        <td><% performance.price %> FCFA</td>
+                                        <td>
+                                            <a v-bind:href="performance.gallery"
+                                               class="search_modal_button topline-button">
+                                                <i class="rt-icon2-search2"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                        <!-- .tab-pane -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<script type="text/javascript" src='{{ "/scripts/vuejs/services.vue.js" | relative_url }}'></script>
