@@ -325,7 +325,7 @@ function documentReadyInit() {
     ////////////////
     //owl carousel//
     ////////////////
-    if (jQuery().owlCarousel) {
+   /* if (jQuery().owlCarousel) {
         jQuery('.owl-carousel').each(function () {
             var $carousel = jQuery(this);
             var loop = $carousel.data('loop') ? $carousel.data('loop') : false;
@@ -407,7 +407,7 @@ function documentReadyInit() {
             }
         });
 
-    } //eof owl-carousel
+    }*/ //eof owl-carousel
 
     //comingsoon counter
     if (jQuery().countdown) {

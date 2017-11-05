@@ -36,7 +36,7 @@ new Vue({
 
         var $owl = jQuery('.page_maincarousel');
         var loop = $owl.data('loop') ? $owl.data('loop') : false;
-        var margin = ($owl.data('margin') || $owl.data('margin') == 0) ? $owl.data('margin') : 30;
+        var margin = ($owl.data('margin') || $owl.data('margin') === 0) ? $owl.data('margin') : 30;
         var nav = $owl.data('nav') ? $owl.data('nav') : false;
         var dots = $owl.data('dots') ? $owl.data('dots') : false;
         var themeClass = $owl.data('themeclass') ? $owl.data('themeclass') : 'owl-theme';
