@@ -26,8 +26,8 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-3 col-sm-6 col-sm-pull-2 col-md-pull-0 text-center">
-                <a href="/" class="logo logo_image">
-                    <img src="/images/logo.png" alt="">
+                <a href="{{ site.baseurl }}/" class="logo logo_image">
+                    <img src="{{ site.baseurl }}/images/logo.png" alt="">
                 </a>
             </div>
             <div class="col-md-9 col-sm-push-2 col-md-push-0">
@@ -35,33 +35,33 @@
                 <nav class="mainmenu_wrapper">
                     <ul class="mainmenu nav sf-menu">
                         <li class="{% if page.menu == 'home' %}active{% endif %}">
-                            <a href="/">Accueil</a>
+                            <a href="{{ site.baseurl }}/">Accueil</a>
                         </li>
 
                         <li class="{% if page.menu == 'about' %}active{% endif %}">
-                            <a href="/a-propos">A Propos</a>
+                            <a href="{{ site.baseurl }}/a-propos">A Propos</a>
                         </li>
                         <!-- eof about -->
 
                         <li class="{% if page.menu == 'services' %}active{% endif %}">
-                            <a href="/services">Nos Services</a>
+                            <a href="{{ site.baseurl }}/services">Nos Services</a>
                         </li>
 
                         <li class="{% if page.menu == 'shop' %}active{% endif %}">
-                            <a href="/boutique">La Boutique</a>
+                            <a href="{{ site.baseurl }}/boutique">La Boutique</a>
                         </li>
 
                         <li class="{% if page.menu == 'appointment' %}active{% endif %}">
-                            <a href="/rendez-vous">Rendez-Vous</a>
+                            <a href="{{ site.baseurl }}/rendez-vous">Rendez-Vous</a>
                         </li>
 
                         <li class="{% if page.menu == 'blog' %}active{% endif %}">
-                            <a href="/blog">Blog</a>
+                            <a href="{{ site.baseurl }}/blog">Blog</a>
                         </li>
 
                         <!-- contacts -->
                         <li class="{% if page.menu == 'contact' %}active{% endif %}">
-                            <a href="/contact">Contact</a>
+                            <a href="{{ site.baseurl }}/contact">Contact</a>
                         </li>
                         <!-- eof contacts -->
 
