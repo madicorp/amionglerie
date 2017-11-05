@@ -133,7 +133,7 @@ gulp.task('generate-service-worker', (callback) => {
     var rootDir = '_site';
 
     swPrecache.write(path.join(rootDir, 'sw.js'), {
-        staticFileGlobs: [rootDir + '/**/*.{js,html,css,png,jpg,gif,json}'],
+        staticFileGlobs: [rootDir + '/**/*.{js,html,css,png,jpg,gif,json,eot,svg,ttf,woff}'],
         stripPrefix: rootDir,
         replacePrefix: '/amionglerie'
     }, callback);
