@@ -1,0 +1,285 @@
+{
+  "footer": {
+    "description": "AmiOnglerie utilise les dernières techniques élaborées avec le modelage de l'ongle au chablon pour une meilleure prestation et une durée plus longue de vos ongles. Nos collaborateurs , toujours à l'écoute , ils sont là pour vous fournir les meilleures prestations possibles, sans attente."
+  },
+  "contact": {
+    "senegal": {
+      "contact": "Réception",
+      "address": "Siprés 2 villa n° 23, Dakar, SÉNÉGAL",
+      "phone": "(+221) 33 000 00 25",
+      "email": "info@ami-onglerie.sn"
+    },
+    "suisse": {
+      "contact": "Réception",
+      "address": "Rue des Creusets 25 - 1950 Sion",
+      "phone": "(+41) 79 779 33 65",
+      "email": "info@ami-onglerie-coiffure.ch"
+    }
+  },
+  "slider": [
+    "gs://ami-onglerie.appspot.com/slider/ami_onglerie_slider_1.jpg",
+    "gs://ami-onglerie.appspot.com/slider/ami_onglerie_slider_2.jpg",
+    "gs://ami-onglerie.appspot.com/slider/ami_onglerie_slider_3.jpg",
+    "gs://ami-onglerie.appspot.com/slider/ami_onglerie_slider_4.jpg",
+    "gs://ami-onglerie.appspot.com/slider/ami_onglerie_slider_5.jpg",
+    "gs://ami-onglerie.appspot.com/slider/ami_onglerie_slider_6.jpg",
+    "gs://ami-onglerie.appspot.com/slider/ami_onglerie_slider_7.jpg",
+    "gs://ami-onglerie.appspot.com/slider/ami_onglerie_slider_8.jpg"
+  ],
+  "home": {
+    "amionglerie": {
+      "intro": "Venez nous retrouver afin d'apprécier l'ensemble de nos soins : manucure, beauté des pieds, modelages,Remplissage gel .déco et nails art.",
+      "text": "Notre établissement utilise les dernières techniques élaborées avec le modelage de l'ongle au chablon pour une meilleure prestation et une durée plus longue de vos ongles. Nos collaborateurs , toujours à l'écoute , ils sont là pour vous fournir les meilleures prestations possibles, sans attente."
+    },
+    "services": [
+      {
+        "icon": "service-media",
+        "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy",
+        "title": "Pédicure Simple"
+      },
+      {
+        "icon": "service-media",
+        "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy",
+        "title": "Luxury European Pédicure"
+      },
+      {
+        "icon": "service-media",
+        "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy",
+        "title": "French Pédicure"
+      },
+      {
+        "icon": "service-media",
+        "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy",
+        "title": "Pédicure avec Massage Relaxant"
+      }
+    ],
+    "academy": {
+      "intro": "AmiOnglerie & Academie",
+      "text": "L'académie AmiOnglerie dispense des cours établis par année afin de donner un enseignement de qualité avec les dernières technologies sur le marché. Les cours sont personnalisés en fonction des demandes et destinés aux débutants et aux professionnels."
+    },
+    "shop": {
+      "intro": "Un espace boutique vous attend :",
+      "text": " Vernis OPI, gamme de soins (gommage, masque, crème hydratante, cure de durcisseur...), huile pour cuticules... Bref, la panoplie pour des mains et des pieds de rêve... Nous travaillons principalement avec la gamme de produits OPI, marque de renommée internationale. La qualité des produits et l’éventail de couleurs vont vous surprendre ! Pour les professionnels du métiers vous y trouverez aussi nos offres avec des matériels de soins des ongles ( lampe Led, ponceuse, lime à ongle, vernis....)"
+    },
+    "package": {
+      "text": "Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
+      "packs": [
+        {
+          "title": "Remplissage",
+          "price": "30 000",
+          "unity": "Par Personne",
+          "specs": [
+            "Pédicure simple"
+          ]
+        },
+        {
+          "title": "Pose complète avec gel modelage ",
+          "price": "40 000",
+          "unity": "Par Personne",
+          "specs": [
+            "Pédicure complète "
+          ]
+        }
+      ]
+    }
+  },
+  "about": {
+    "amionglerie": {
+      "text": "<p>Mme Aminata directrice à AmiOnglerie (Suisse-Sénégal), prothésiste ongulaire depuis 10 ans et diplômée des grandes écoles d'onglerie à l'instar d'OPI, vous accueille avec toute son équipe, dans un cadre agréable et raffiné afin de vous prodiguer les meilleurs soins ongulaires.</p><p>Notre établissement utilise les dernières techniques élaborées avec le modelage de l'ongle au chablon pour une meilleure prestation et une durée plus longue de vos ongles. Nos collaborateurs , toujours à l'écoute , ils sont là pour vous fournir les meilleures prestations possibles, sans attente.</p><p>Venez nous retrouver afin d'apprécier l'ensemble de nos soins : manucure, beauté des pieds, modelages,Remplissage gel .déco et nails art. </p> <p>AmiOnglerie c'est aussi une boutique pour les nail- Addicts et les professionnels du métier qui propose une large gamme de produits des meilleurs à savoir les matériels professionnels de beauté et une grande palette de vernis. </p>",
+      "photo": "gs://ami-onglerie.appspot.com/about/ami_onglerie_manager.jpg"
+    },
+    "academy": {
+      "text": "L'academie AmiOnglerie est un centre de formation pour toutes les personnes qui souhaitent travailler dans le domaine du stylisme ongulaire en tant qu’indépendantes, ainsi que pour tout professionnel déjà en activité. Plurilingues et ouvertes aux nouveautés, notre école décèle les nouvelles tendances, les suivent et les développent. Notre objectif est de pouvoir placer chaque èlève à la fin de la formation dans nos differents instituts qui verront le jour et de participer au dévéloppement économique du Sénegal . Nous permettons l’accomplissement personnel de tout individu désirant se réaliser professionnellement.",
+      "photo": "gs://ami-onglerie.appspot.com/about/ami_onglerie_academie.jpg"
+    },
+    "team": [
+      {
+        "name": "carl",
+        "role": "Manager",
+        "message": "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy",
+        "photo": "gs://ami-onglerie.appspot.com/about/team/01.jpg"
+      },
+      {
+        "name": "Jule",
+        "role": "assistant",
+        "message": "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy",
+        "photo": "gs://ami-onglerie.appspot.com/about/team/02.jpg"
+      },
+      {
+        "name": "Ana",
+        "role": "comunication",
+        "message": "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy",
+        "photo": "gs://ami-onglerie.appspot.com/about/team/03.jpg"
+      }
+    ]
+  },
+  "services": {
+    "types": [
+      {
+        "name": "Ongleries",
+        "performances": [
+          {
+            "name": "Pose complète gel avec modelage",
+            "description": "",
+            "price": "25 000",
+            "time": "52",
+            "gallery": "#"
+          },
+          {
+            "name": "Pose complète avec tips plus gel",
+            "description": "",
+            "price": "18 000",
+            "time": "89",
+            "gallery": "#"
+          },
+          {
+            "name": "Remplissage gel",
+            "description": "",
+            "price": "15 000",
+            "time": "89",
+            "gallery": "#"
+          },
+          {
+            "name": "Deco nail art",
+            "description": "Deco nail art pour un doigt",
+            "price": "1 500",
+            "time": "89",
+            "gallery": "#"
+          },
+          {
+            "name": "Deco nail art complet",
+            "description": "Deco nail art complet (Tous les doigt)",
+            "price": "5 000",
+            "time": "89",
+            "gallery": "#"
+          },
+          {
+            "name": "Pose vernis permanent",
+            "description": "Pose vernis permanent sur ongle court",
+            "price": "7 000",
+            "time": "89",
+            "gallery": "#"
+          },
+          {
+            "name": "Pose vernis permanent",
+            "description": "Pose vernis permanent sur ongle long",
+            "price": "15 000",
+            "time": "89",
+            "gallery": "#"
+          },
+          {
+            "name": "Pose vernis",
+            "description": "",
+            "price": "1 500",
+            "time": "89",
+            "gallery": "#"
+          }
+        ]
+      },
+      {
+        "name": "Pédicures",
+        "performances": [
+          {
+            "name": "Pédicure complète avec gel",
+            "description": "",
+            "price": "15 000",
+            "time": "52",
+            "gallery": "#"
+          },
+          {
+            "name": "Pédicure complète avec gel semis permanent",
+            "description": "",
+            "price": "15 000",
+            "time": "89",
+            "gallery": "#"
+          },{
+            "name": "Pédicure simple avec vernis",
+            "description": "",
+            "price": "10 000",
+            "time": "89",
+            "gallery": "#"
+          },{
+            "name": "Pédicure simple avec gel ou semis permanent",
+            "description": "",
+            "price": "15 000",
+            "time": "89",
+            "gallery": "#"
+          }
+        ]
+      }
+    ]
+  },
+  "shop": {
+    "types": [
+      {
+        "name": "type 1",
+        "items": [
+          {
+            "name": "Kit Vernis Semi Permanent",
+            "description": "Ce kit comprend 6 flacons de 10ml de vernis semi permanent, soit 6 couleurs différentes à essayer. Il comprend également un flacon de 10ml de base coat et un flacon de 10 ml de top coat, et bien sûr une une lampe mini LED de 9watts.",
+            "price": "10",
+            "photo": "gs://ami-onglerie.appspot.com/shop/type-1/ami_onglerie_shop_kit_vernis_semi_permanent.jpg"
+          },
+          {
+            "name": "bla 2",
+            "description": "bla bla 2",
+            "price": "20",
+            "photo": "gs://ami-onglerie.appspot.com/shop/type-1/ami_onglerie_shop_kit_vernis_semi_permanent.jpg"
+          },
+          {
+            "name": "bla 3",
+            "description": "bla bla 3",
+            "price": "30",
+            "photo": "gs://ami-onglerie.appspot.com/shop/type-1/ami_onglerie_shop_kit_vernis_semi_permanent.jpg"
+          }
+        ]
+      },
+      {
+        "name": "type 2",
+        "items": [
+          {
+            "name": "bla 4",
+            "description": "bla bla 4",
+            "price": "40",
+            "photo": "gs://ami-onglerie.appspot.com/shop/type-1/ami_onglerie_shop_kit_vernis_semi_permanent.jpg"
+          },
+          {
+            "name": "bla 5",
+            "description": "bla bla 5",
+            "price": "50",
+            "photo": "gs://ami-onglerie.appspot.com/shop/type-1/ami_onglerie_shop_kit_vernis_semi_permanent.jpg"
+          },
+          {
+            "name": "bla 6",
+            "description": "bla bla 6",
+            "price": "60",
+            "photo": "gs://ami-onglerie.appspot.com/shop/type-1/ami_onglerie_shop_kit_vernis_semi_permanent.jpg"
+          }
+        ]
+      },
+      {
+        "name": "type 3",
+        "items": [
+          {
+            "name": "bla 7",
+            "description": "bla bla 7",
+            "price": "70",
+            "photo": "gs://ami-onglerie.appspot.com/shop/type-1/ami_onglerie_shop_kit_vernis_semi_permanent.jpg"
+          },
+          {
+            "name": "bla 8",
+            "description": "bla bla 8",
+            "price": "80",
+            "photo": "gs://ami-onglerie.appspot.com/shop/type-1/ami_onglerie_shop_kit_vernis_semi_permanent.jpg"
+          },
+          {
+            "name": "bla 9",
+            "description": "bla bla 9",
+            "price": "90",
+            "photo": "gs://ami-onglerie.appspot.com/shop/type-1/ami_onglerie_shop_kit_vernis_semi_permanent.jpg"
+          }
+        ]
+      }
+    ]
+  }
+}

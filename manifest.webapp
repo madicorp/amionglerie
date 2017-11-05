@@ -13,11 +13,11 @@
   "installs_allowed_from": [
     "*"
   ],
-  "default_locale": "en",
+  "default_locale": "fr",
   "permissions": {
   },
   "locales": {
-    "en": {
+    "fr": {
       "name": "amionglerie",
       "description": "ami onglerie nail bar"
     }
