@@ -13,7 +13,6 @@ Vue.component('fire-img', {
             var self = this;
             storage.refFromURL(self.url).getDownloadURL().then(function (url) {
                 self.imgUrl = url;
-                jQuery('.owl-carousel').trigger('refresh.owl.carousel');
             });
             return "";
         }
@@ -44,7 +43,7 @@ new Vue({
         var responsiveMd = $owl.data('responsive-md') ? $owl.data('responsive-md') : 3;
         var responsiveLg = $owl.data('responsive-lg') ? $owl.data('responsive-lg') : 4;
         var responsivexLg = $owl.data('responsive-xlg') ? $owl.data('responsive-xlg') : responsiveLg;
-        console.log(loop);
+        $owl.trigger('destroy.owl.carousel');
         $owl.owlCarousel({
             loop: loop,
             margin: margin,
@@ -83,7 +82,7 @@ new Vue({
             jQuery(".testimonials-body").find("[data-slide='"+ currentItem +"']").fadeIn();
         });
 
-       $testimCarousel.on('translate.owl.carousel', function(e){
+        $testimCarousel.on('translate.owl.carousel', function(e){
             var currentItem = e.item.index - 2;
             jQuery(".testimonials-body .blockquote-big").fadeOut();
             jQuery(".testimonials-body").find("[data-slide='"+ currentItem +"']").delay(400).fadeIn();

@@ -1,0 +1,43 @@
+---
+layout: default
+title: Gallerie
+permalink: /gallerie/
+menu: gallerie
+---
+<div id="gallery" v-infinite-scroll="" infinite-scroll-disabled="busy" infinite-scroll-distance="2">
+    <section class="ds page_portfolio section_padding_70 columns_padding_0">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <div class="filters isotope_filters text-center">
+                        <a href="#" data-filter="*" class="selected">Tous</a>
+                        <a href="#" data-filter=".main">Manicure</a>
+                        <a href="#" data-filter=".pied">Pédicure</a>
+                    </div>
+
+
+                    <div class="isotope_container isotope row masonry-layout" data-filters=".isotope_filters">
+
+                        <div v-for="photo in gallery.photos" :class="'isotope-item col-lg-2 col-md-4 col-sm-6 ' + photo.type">
+                           <gallery-item :item="photo"></gallery-item>
+                        </div>
+
+                    </div>
+                    <!-- eof .isotope_container.row -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section v-show="busy" class="ds section_padding_bottom_80">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <img src="/images/loading.png" alt="Loading" class="fa-spin">
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<script type="text/javascript" src='{{ "/scripts/vuejs/gallery.vue.js" | relative_url }}'></script>

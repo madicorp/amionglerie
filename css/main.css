@@ -3864,6 +3864,30 @@ a.logo.vertical_logo img {
     background-image: url("../images/service_media01.png");
 }
 
+.coupe-ongle {
+    width: 60px;
+    height: 60px;
+    background-image: url("../images/coup-ongle.png");
+}
+
+.vernis {
+    width: 60px;
+    height: 60px;
+    background-image: url("../images/vernis.png");
+}
+
+.vernis-ongle {
+    width: 60px;
+    height: 60px;
+    background-image: url("../images/vernis-ongle.png");
+}
+
+.vernis-2 {
+    width: 60px;
+    height: 60px;
+    background-image: url("../images/vernis-2.png");
+}
+
 .intro_section .media-body {
     vertical-align: middle;
 }
