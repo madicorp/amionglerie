@@ -141,14 +141,14 @@ gulp.task('generate-service-worker', (callback) => {
 
 gulp.task('fix-config', () => {
     gulp.src('_config.yml')
-        .pipe($.replace('baseurl: ""', 'baseurl: "/amionglerie"'))
+        .pipe($.replace('baseurl: ""', 'baseurl: "/"'))
         .pipe($.clean())
         .pipe(gulp.dest('.'));
 });
 
 gulp.task('revert-config', () => {
     gulp.src('_config.yml')
-        .pipe($.replace('baseurl: "/amionglerie"', 'baseurl: ""'))
+        .pipe($.replace('baseurl: "/"', 'baseurl: ""'))
         .pipe($.clean())
         .pipe(gulp.dest('.'));
 });
