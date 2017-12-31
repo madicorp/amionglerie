@@ -3,6 +3,11 @@
 new Vue({
     delimiters: ['<%', '%>'],
     el: '#footer',
+    data:{
+        footer: {
+            description:""
+        }
+    },
     firebase: {
         footer: {
             source: db.ref("footer"),

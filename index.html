@@ -154,46 +154,6 @@ menu: home
         </div>
         <!-- eof flexslider -->
     </section>
-    <section class="ds parallax calltoaction section_padding_100"
-             style='background-image: url({{ "/images/parallax/bg_parallax_2.jpg" | relative_url }})'>
-        <div class="container">
-            <div class="row bottommargin_20">
-                <div class="col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8 text-center">
-                    <h2 class="big topmargin_0">
-                        Nos Packages Beauté
-                    </h2>
-                    <p class="entry-excerpt bottommargin_30">
-                        Venez vous faire choyer le temps d’une parenthèse de beauté.
-                    </p>
-                    <p>
-                        <% home.package.text %>
-                    </p>
-                </div>
-            </div>
-            <div class="row display_table_md">
-                <div v-for="pack in home.package.packs"
-                     class="col-md-4 display_table_cell_md">
-
-                    <div class="price-table with_background">
-                        <div class="plan-name text-uppercase darkgrey_bg_color">
-                            <h3><% pack.title %></h3>
-                        </div>
-                        <div class="plan-price cs">
-                            <span><% pack.price %></span>
-                            <span>CFA</span>
-                            <p><% pack.unity %></p>
-                        </div>
-                        <div class="features-list">
-                            <ul>
-                                <li v-for="spec in pack.specs"><% spec %></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
     <section id="shop_section" class="ds section_padding_70 gorizontal_padding">
         <div class="container-fluid">
             <div class="row">

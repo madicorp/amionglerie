@@ -5,8 +5,8 @@ var storage = firebaseApp.storage();
 Vue.component('fire-img', {
     props: ['url'],
     template: '<img :src="imgUrl" :alt="src">',
-    data : function(){
-        return {imgUrl : ""};
+    data: function () {
+        return {imgUrl: ""};
     },
     computed: {
         src: function () {
@@ -25,6 +25,11 @@ Vue.component('fire-img', {
 new Vue({
     delimiters: ['<%', '%>'],
     el: '#slider',
+    data: {
+        root: {
+            slider: []
+        }
+    },
     firebase: {
         root: {
             source: db.ref(),

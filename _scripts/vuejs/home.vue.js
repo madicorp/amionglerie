@@ -3,6 +3,27 @@
 new Vue({
     delimiters: ['<%', '%>'],
     el: '#home',
+    data: {
+        home: {
+            amionglerie: {
+                intro: "",
+                text: ""
+            },
+            services: [],
+            academy: {
+                intro: "",
+                text: ""
+            },
+            shop: {
+                intro: "",
+                text: ""
+            },
+            package:{
+                text: "",
+                packs: []
+            }
+        }
+    },
     firebase: {
         home: {
             source: db.ref("home"),
