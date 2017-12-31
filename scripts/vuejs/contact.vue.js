@@ -1,1 +1,1 @@
-"use strict";new Vue({delimiters:["<%","%>"],el:"#contact",firebase:{contact:{source:db.ref("contact"),asObject:!0}}});
+"use strict";new Vue({delimiters:["<%","%>"],el:"#contact",data:{contact:{senegal:{contact:"",address:"",phone:"",email:""},suisse:{contact:"",address:"",phone:"",email:""}}},firebase:{contact:{source:db.ref("contact"),asObject:!0}}});
