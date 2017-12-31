@@ -5,9 +5,9 @@
     <description>ami onglerie nail bar
 </description>
     <link>/</link>
-    <atom:link href="/amionglerie/https://amionglerie.com//amionglerie/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 31 Dec 2017 06:54:27 +0000</pubDate>
-    <lastBuildDate>Sun, 31 Dec 2017 06:54:27 +0000</lastBuildDate>
+    <atom:link href="/https://amionglerie.com//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 31 Dec 2017 06:54:53 +0000</pubDate>
+    <lastBuildDate>Sun, 31 Dec 2017 06:54:53 +0000</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
@@ -28,8 +28,8 @@
 
 </description>
         <pubDate>Thu, 08 Sep 2016 08:56:39 +0000</pubDate>
-        <link>/amionglerie/https://amionglerie.com//amionglerie/jekyll/update/2016/09/08/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">/amionglerie/https://amionglerie.com//amionglerie/jekyll/update/2016/09/08/welcome-to-jekyll/</guid>
+        <link>/https://amionglerie.com//jekyll/update/2016/09/08/welcome-to-jekyll/</link>
+        <guid isPermaLink="true">/https://amionglerie.com//jekyll/update/2016/09/08/welcome-to-jekyll/</guid>
         
         
         <category>jekyll</category>
