@@ -135,20 +135,20 @@ gulp.task('generate-service-worker', (callback) => {
     swPrecache.write(path.join(rootDir, 'sw.js'), {
         staticFileGlobs: [rootDir + '/**/*.{js,html,css,png,jpg,gif,json,eot,svg,ttf,woff}'],
         stripPrefix: rootDir,
-        replacePrefix: '/amionglerie'
+        replacePrefix: ''
     }, callback);
 });
 
 gulp.task('fix-config', () => {
     gulp.src('_config.yml')
-        .pipe($.replace('baseurl: ""', 'baseurl: "/"'))
+        .pipe($.replace('baseurl: ""', 'baseurl: ""'))
         .pipe($.clean())
         .pipe(gulp.dest('.'));
 });
 
 gulp.task('revert-config', () => {
     gulp.src('_config.yml')
-        .pipe($.replace('baseurl: "/"', 'baseurl: ""'))
+        .pipe($.replace('baseurl: ""', 'baseurl: ""'))
         .pipe($.clean())
         .pipe(gulp.dest('.'));
 });
