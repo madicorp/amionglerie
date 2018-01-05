@@ -20,9 +20,6 @@
     }
   ],
   "scripts": {
-    "post-root-package-install": [
-      "php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-    ],
     "post-install-cmd": [
       "php -r \"file_exists('public/wordpress/wp-content/db.php') || copy('db.sample', 'public/wordpress/wp-content/db.php');\""
     ],
