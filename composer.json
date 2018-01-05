@@ -20,12 +20,7 @@
     }
   ],
   "scripts": {
-    "post-install-cmd": [
-      "php -r \"file_exists('public/wordpress/wp-content/db.php') || copy('db.sample', 'public/wordpress/wp-content/db.php');\""
-    ],
-    "post-update-cmd": [
-      "php -r \"file_exists('public/wordpress/wp-content/db.php') || copy('db.sample', 'public/wordpress/wp-content/db.php');\""
-    ]
+
   },
   "config": {
     "preferred-install": "dist",
@@ -34,10 +29,7 @@
   },
   "extra": {
     "installer-paths": {
-      "public/mu-plugins/{$name}": [
-        "type:wordpress-muplugin",
-        "wpackagist-plugin/postgresql-for-wordpress"
-      ],
+      "public/mu-plugins/{$name}": ["type:wordpress-muplugin"],
       "public/plugins/{$name}": [
         "type:wordpress-plugin"
       ],
