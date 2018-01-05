@@ -88,6 +88,4 @@ $application->run();
 | include here in order to support WP-CLI.
 |
 */
-die(env(DATABASE_URL, "hello"));
-
 require_once ABSPATH.'wp-settings.php';
