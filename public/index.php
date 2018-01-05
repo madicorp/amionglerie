@@ -33,5 +33,5 @@ define('WP_USE_THEMES', true);
 | load the theme.
 |
 */
-dd(env(DATABASE_URL, "hello"));
+die(env(DATABASE_URL, "hello"));
 require __DIR__.'/wordpress/wp-blog-header.php';
