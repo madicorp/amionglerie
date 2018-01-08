@@ -38,6 +38,10 @@ Vue.component('item-content', {
             return "";
         }
     },
+    updated: function () {
+        jQuery('.isotope_container').isotope('shuffle');
+        jQuery("a[data-filter='*']").click();
+    }
 });
 
 
