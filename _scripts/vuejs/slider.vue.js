@@ -79,8 +79,7 @@ new Vue({
                     items: responsivexLg
                 }
             },
-        })
-            .addClass(themeClass).addClass('owl-center');
+        }).addClass(themeClass).addClass('owl-center');
 
         $owl.trigger('refresh.owl.carousel');
 
