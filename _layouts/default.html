@@ -50,8 +50,7 @@
 <!-- eof #canvas -->
 
 
-<script src='{{ "/scripts/vendor/compressed.js" | relative_url }}'></script>
-<script async src='{{ "/scripts/main.min.js" | relative_url }}'></script>
+<script src='{{ "/scripts/main.min.js" | relative_url }}'></script>
 <script>
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('{{ "/sw.js" | relative_url }}').then(function () {
