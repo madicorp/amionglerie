@@ -3,202 +3,197 @@ layout: default
 menu: home
 ---
 {% include slider.html %}
-<div id="home">
-    <section class="ds intro_section">
-        <div class="flexslider vertical-nav">
-            <ul class="slides">
+<section id="intro-section" class="ds intro_section">
+    <div class="flexslider vertical-nav">
+        <ul class="slides">
 
-                <li>
-                    <img src='{{ "/images/ami.png" | relative_url }}' alt="">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 text-center text-md-right">
-                                <div class="slide_description_wrapper">
-                                    <div class="slide_description">
-                                        <div class="intro-layer" data-animation="slideExpandUp">
-                                            <h2 class="big margin_0">Ami Onglerie</h2>
-                                            <h2 class="muellerhoff topmargin_5 bottommargin_50 highlight">
-                                                Saviez vous que ..
-                                            </h2>
-                                        </div>
-                                        <div class="intro-layer" data-animation="slideExpandUp">
-                                            <p class="entry-excerpt bottommargin_30">
-                                                <% home.amionglerie.intro %>
-                                            </p>
-                                            <p>
-                                                <% home.amionglerie.text %>
-                                            </p>
-                                            <a href="/a-propos" class="theme_button color1 topmargin_20">En savoir +</a>
-                                        </div>
+            <li>
+                <img src='{{ "/images/ami.png" | relative_url }}' alt="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center text-md-right">
+                            <div class="slide_description_wrapper">
+                                <div class="slide_description">
+                                    <div class="intro-layer" data-animation="slideExpandUp">
+                                        <h2 class="big margin_0">Ami Onglerie</h2>
+                                        <h2 class="muellerhoff topmargin_5 bottommargin_50 highlight">
+                                            Saviez vous que ..
+                                        </h2>
                                     </div>
-                                    <!-- eof .slide_description -->
+                                    <div class="intro-layer" data-animation="slideExpandUp">
+                                        <p class="entry-excerpt bottommargin_30">
+                                            <% home.amionglerie.intro %>
+                                        </p>
+                                        <p>
+                                            <% home.amionglerie.text %>
+                                        </p>
+                                        <a href="/a-propos" class="theme_button color1 topmargin_20">En savoir +</a>
+                                    </div>
                                 </div>
-                                <!-- eof .slide_description_wrapper -->
+                                <!-- eof .slide_description -->
                             </div>
-                            <!-- eof .col-* -->
+                            <!-- eof .slide_description_wrapper -->
                         </div>
-                        <!-- eof .row -->
+                        <!-- eof .col-* -->
                     </div>
-                    <!-- eof .container -->
-                </li>
+                    <!-- eof .row -->
+                </div>
+                <!-- eof .container -->
+            </li>
 
-                <li>
-                    <img src='{{ "/images/service.png" | relative_url }}' alt="">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 text-center text-md-right">
-                                <div class="slide_description_wrapper">
-                                    <div class="slide_description">
-                                        <div class="intro-layer" data-animation="slideExpandUp">
-                                            <h2 class="big margin_0">Nos Services</h2>
-                                            <h2 class="muellerhoff topmargin_5 bottommargin_50 highlight">
-                                                Découvrez..
-                                            </h2>
-                                        </div>
-                                        <div class="intro-layer" data-animation="slideExpandUp">
-                                            <div v-for="service in home.services" class="media bottommargin_30">
-                                                <div class="media-left">
-                                                    <div v-bind:class="service.icon"></div>
-                                                </div>
-                                                <div class="media-body">
-                                                    <h4 class="topmargin_0 bottommargin_5">
-                                                        <a href="#"><% service.title %></a>
-                                                    </h4>
-                                                    <p class="bottommargin_0">
-                                                        <% service.text %>
-                                                    </p>
-                                                </div>
+            <li>
+                <img src='{{ "/images/service.png" | relative_url }}' alt="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center text-md-right">
+                            <div class="slide_description_wrapper">
+                                <div class="slide_description">
+                                    <div class="intro-layer" data-animation="slideExpandUp">
+                                        <h2 class="big margin_0">Nos Services</h2>
+                                        <h2 class="muellerhoff topmargin_5 bottommargin_50 highlight">
+                                            Découvrez..
+                                        </h2>
+                                    </div>
+                                    <div class="intro-layer" data-animation="slideExpandUp">
+                                        <div v-for="service in home.services" class="media bottommargin_30">
+                                            <div class="media-left">
+                                                <div v-bind:class="service.icon"></div>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="topmargin_0 bottommargin_5">
+                                                    <a href="#"><% service.title %></a>
+                                                </h4>
+                                                <p class="bottommargin_0">
+                                                    <% service.text %>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- eof .slide_description -->
                                 </div>
-                                <!-- eof .slide_description_wrapper -->
+                                <!-- eof .slide_description -->
                             </div>
-                            <!-- eof .col-* -->
+                            <!-- eof .slide_description_wrapper -->
                         </div>
-                        <!-- eof .row -->
+                        <!-- eof .col-* -->
                     </div>
-                    <!-- eof .container -->
-                </li>
+                    <!-- eof .row -->
+                </div>
+                <!-- eof .container -->
+            </li>
 
-                <li>
-                    <img src='{{ "/images/academie.png" | relative_url }}' alt="">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 text-center text-md-right">
-                                <div class="slide_description_wrapper">
-                                    <div class="slide_description">
-                                        <div class="intro-layer" data-animation="slideExpandUp">
-                                            <h2 class="big margin_0">A Propos de l'academie</h2>
-                                            <h2 class="muellerhoff topmargin_5 bottommargin_50 highlight">
-                                                Devenir Prothésiste ongulaire ?
-                                            </h2>
-                                        </div>
-                                        <div class="intro-layer" data-animation="slideExpandUp">
-                                            <p class="entry-excerpt bottommargin_30">
-                                                <% home.academy.intro %>
-                                            </p>
-                                            <p>
-                                                <% home.academy.text %>
-                                            </p>
-                                            <a href="/a-propos" class="theme_button color1 topmargin_20">En savoir +</a>
-                                        </div>
+            <li>
+                <img src='{{ "/images/academie.png" | relative_url }}' alt="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center text-md-right">
+                            <div class="slide_description_wrapper">
+                                <div class="slide_description">
+                                    <div class="intro-layer" data-animation="slideExpandUp">
+                                        <h2 class="big margin_0">A Propos de l'academie</h2>
+                                        <h2 class="muellerhoff topmargin_5 bottommargin_50 highlight">
+                                            Devenir Prothésiste ongulaire ?
+                                        </h2>
                                     </div>
-                                    <!-- eof .slide_description -->
-                                </div>
-                                <!-- eof .slide_description_wrapper -->
-                            </div>
-                            <!-- eof .col-* -->
-                        </div>
-                        <!-- eof .row -->
-                    </div>
-                    <!-- eof .container -->
-                </li>
-
-                <li>
-                    <img src='{{ "/images/shop.png" | relative_url }}' alt="">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 text-center text-md-right">
-                                <div class="slide_description_wrapper">
-                                    <div class="slide_description">
-                                        <div class="intro-layer" data-animation="slideExpandUp">
-                                            <h2 class="big margin_0">La Boutique</h2>
-                                            <h2 class="muellerhoff topmargin_5 bottommargin_50 highlight">
-                                                Quelque chose que vous devez savoir
-                                            </h2>
-                                        </div>
-                                        <div class="intro-layer" data-animation="slideExpandUp">
-                                            <p class="entry-excerpt bottommargin_30">
-                                                <% home.shop.intro %>
-                                            </p>
-                                            <p>
-                                                <% home.shop.text %>
-                                            </p>
-                                            <a href="/boutique" class="theme_button color1 topmargin_20">Voir les
-                                                produits</a>
-                                        </div>
+                                    <div class="intro-layer" data-animation="slideExpandUp">
+                                        <p class="entry-excerpt bottommargin_30">
+                                            <% home.academy.intro %>
+                                        </p>
+                                        <p>
+                                            <% home.academy.text %>
+                                        </p>
+                                        <a href="/a-propos" class="theme_button color1 topmargin_20">En savoir +</a>
                                     </div>
-                                    <!-- eof .slide_description -->
                                 </div>
-                                <!-- eof .slide_description_wrapper -->
+                                <!-- eof .slide_description -->
                             </div>
-                            <!-- eof .col-* -->
+                            <!-- eof .slide_description_wrapper -->
                         </div>
-                        <!-- eof .row -->
+                        <!-- eof .col-* -->
                     </div>
-                    <!-- eof .container -->
-                </li>
-            </ul>
-        </div>
-        <!-- eof flexslider -->
-    </section>
-    <section id="shop_section" class="ds section_padding_70 gorizontal_padding">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="teaser table_section">
-                        <div class="row">
-                            <div class="col-sm-5">
-                                <h2 class="text-md-right">La Boutique</h2>
-                            </div>
+                    <!-- eof .row -->
+                </div>
+                <!-- eof .container -->
+            </li>
 
-                            <div class="col-sm-1 text-center">
-                                <div class="teaser_icon main_bg_color size_small round">
-                                    <i class="rt-icon2-shop"></i>
+            <li>
+                <img src='{{ "/images/shop.png" | relative_url }}' alt="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center text-md-right">
+                            <div class="slide_description_wrapper">
+                                <div class="slide_description">
+                                    <div class="intro-layer" data-animation="slideExpandUp">
+                                        <h2 class="big margin_0">La Boutique</h2>
+                                        <h2 class="muellerhoff topmargin_5 bottommargin_50 highlight">
+                                            Quelque chose que vous devez savoir
+                                        </h2>
+                                    </div>
+                                    <div class="intro-layer" data-animation="slideExpandUp">
+                                        <p class="entry-excerpt bottommargin_30">
+                                            <% home.shop.intro %>
+                                        </p>
+                                        <p>
+                                            <% home.shop.text %>
+                                        </p>
+                                        <a href="/boutique" class="theme_button color1 topmargin_20">Voir les
+                                            produits</a>
+                                    </div>
                                 </div>
+                                <!-- eof .slide_description -->
                             </div>
+                            <!-- eof .slide_description_wrapper -->
+                        </div>
+                        <!-- eof .col-* -->
+                    </div>
+                    <!-- eof .row -->
+                </div>
+                <!-- eof .container -->
+            </li>
+        </ul>
+    </div>
+    <!-- eof flexslider -->
+</section>
+<section id="shop_section" class="ds section_padding_70 gorizontal_padding">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="teaser table_section">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <h2 class="text-md-right">La Boutique</h2>
+                        </div>
 
-                            <div class="col-sm-5">
-                                <p>
-                                    At vero eos et accusam justo duo dolores ea rebum skasd gubergren no sea takimata
-                                    sanctus est lorem ipsum
-                                </p>
+                        <div class="col-sm-1 text-center">
+                            <div class="teaser_icon main_bg_color size_small round">
+                                <i class="rt-icon2-shop"></i>
                             </div>
+                        </div>
+
+                        <div class="col-sm-5">
+                            <p>
+                                At vero eos et accusam justo duo dolores ea rebum skasd gubergren no sea takimata
+                                sanctus est lorem ipsum
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="ds map muted_section">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <div class="teaser text-center">
-                        <div class="teaser_icon black size_normal">
-                            <i class="rt-icon2-location2 highlight"></i>
-                        </div>
+    </div>
+</section>
+<section class="ds map muted_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <div class="teaser text-center">
+                    <div class="teaser_icon black size_normal">
+                        <i class="rt-icon2-location2 highlight"></i>
                     </div>
-                    <a href="#" class="theme_button">Siprés 2 villa n° 23 Dakar - SÉNÉGAL</a>
                 </div>
+                <a href="#" class="theme_button">Siprés 2 villa n° 23 Dakar - SÉNÉGAL</a>
             </div>
-
         </div>
-    </section>
-</div>
+
+    </div>
+</section>
 {% include contact_section.html %}
-<script type="text/javascript" src='{{ "/scripts/vuejs/slider.vue.js" | relative_url }}'></script>
-<script type="text/javascript" src='{{ "/scripts/vuejs/contact.vue.js" | relative_url }}'></script>
-<script type="text/javascript" src='{{ "/scripts/vuejs/home.vue.js" | relative_url }}'></script>

@@ -51,6 +51,53 @@
 
 
 <script src='{{ "/scripts/main.min.js" | relative_url }}'></script>
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = 'https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.11&appId=647290955385656';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+{% if page.menu == 'home' %}
+<!--home scritps-->
+<script type="text/javascript" src='{{ "/scripts/vuejs/slider.vue.js" | relative_url }}'></script>
+<script type="text/javascript" src='{{ "/scripts/vuejs/contact.vue.js" | relative_url }}'></script>
+<script type="text/javascript" src='{{ "/scripts/vuejs/home.vue.js" | relative_url }}'></script>
+<!--\home scritps-->
+{% endif %}
+{% if page.menu == 'about' %}
+<!--about scritps-->
+<script type="text/javascript" src='{{ "/scripts/vuejs/about.vue.js" | relative_url }}'></script>
+<!--\about scritps-->
+{% endif %}
+{% if page.menu == 'shop' %}
+<!--shop scritps-->
+<script type="text/javascript" src='{{ "/scripts/vuejs/shop.vue.js" | relative_url }}'></script>
+<!--\shop scritps-->
+{% endif %}
+{% if page.menu == 'services' %}
+<!--services scritps-->
+<script type="text/javascript" src='{{ "/scripts/vuejs/services.vue.js" | relative_url }}'></script>
+<!--\services scritps-->
+{% endif %}
+{% if page.menu == 'gallerie' %}
+<!--gallery scritps-->
+<script type="text/javascript" src='{{ "/scripts/vuejs/gallery.vue.js" | relative_url }}'></script>
+<!--\gallery scritps-->
+{% endif %}
+{% if page.menu == 'contact' %}
+<!--\contact scritps-->
+
+<script type="text/javascript" src='{{ "/scripts/vuejs/contact.vue.js" | relative_url }}'></script>
+<!-- Google Map Script -->
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTwYSMRGuTsmfl2z_zZDStYqMlKtrybxo"></script>
+<!--\contact scritps-->
+{% endif %}
+<script type="text/javascript" src='{{ "/scripts/vuejs/footer.vue.js" | relative_url }}'></script>
 <script>
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('{{ "/sw.js" | relative_url }}').then(function () {

@@ -28,58 +28,74 @@
                 </p>
             </div>
             <div class="col-md-8">
-                <form class="contact-form row" method="post" action="#">
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label for="name" class="sr-only">Nom et Prénom
-                                <span class="required">*</span>
-                            </label>
-                            <input type="text" aria-required="true" size="30" value="" name="name" id="name"
-                                   class="form-control with-icon" placeholder="Nom">
-                            <i class="rt-icon2-user"></i>
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="sr-only">Email
-                                <span class="required">*</span>
-                            </label>
-                            <input type="email" aria-required="true" size="30" value="" name="email" id="email"
-                                   class="form-control with-icon" placeholder="email">
-                            <i class="rt-icon2-mail"></i>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone" class="sr-only">Numero de Téléphone
-                                <span class="required">*</span>
-                            </label>
-                            <input type="text" aria-required="true" size="30" value="" name="phone" id="phone"
-                                   class="form-control with-icon" placeholder="Telephone">
-                            <i class="rt-icon2-phone5"></i>
-                        </div>
-                        <div class="form-group bottommargin_0">
-                            <label for="theme" class="sr-only">Objet
-                                <span class="required">*</span>
-                            </label>
-                            <input type="text" aria-required="true" size="30" value="" name="objet" id="theme"
-                                   class="form-control with-icon" placeholder="Objet">
-                            <i class="rt-icon2-bulb"></i>
-                        </div>
+                <form v-on:submit.prevent="onSubmit" class="contact-form row">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="name" class="sr-only">Nom et Prénom
+                                    <span class="required">*</span>
+                                </label>
+                                <input required type="text" aria-required="true"
+                                       v-model="form.name"
+                                       size="30" value="" name="name" id="name"
+                                       class="form-control with-icon" placeholder="Nom">
+                                <i class="rt-icon2-user"></i>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="sr-only">Email
+                                    <span class="required">*</span>
+                                </label>
+                                <input required type="email" aria-required="true"
+                                       v-model="form.email"
+                                       size="30" value="" name="email" id="email"
+                                       class="form-control with-icon" placeholder="email">
+                                <i class="rt-icon2-mail"></i>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="sr-only">Téléphone
+                                    <span class="required">*</span>
+                                </label>
+                                <input type="text" aria-required="true"
+                                       v-model="form.phone"
+                                       size="30" value="" name="phone" id="phone"
+                                       class="form-control with-icon" placeholder="Telephone">
+                                <i class="rt-icon2-phone5"></i>
+                            </div>
+                            <div class="form-group bottommargin_0">
+                                <label for="theme" class="sr-only">Objet
+                                    <span class="required">*</span>
+                                </label>
+                                <input required type="text" aria-required="true"
+                                       v-model="form.objet"
+                                       size="30" value="" name="objet" id="theme"
+                                       class="form-control with-icon" placeholder="Objet">
+                                <i class="rt-icon2-bulb"></i>
+                            </div>
 
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="message" class="sr-only">Message</label>
+                                <textarea required aria-required="true"
+                                          v-model="form.message"
+                                          rows="6" cols="45" name="message" id="message"
+                                          class="form-control with-icon" placeholder="Message"></textarea>
+                                <i class="rt-icon2-pen"></i>
+                            </div>
+
+                            <button type="submit" id="contact_form_submit" name="contact_submit"
+                                    class="theme_button color1 bottommargin_0">Envoyer
+                            </button>
+                            <span class="ajax-loader"></span>
+                            <button type="reset" id="contact_form_clear" name="contact_clear"
+                                    class="theme_button inverse bottommargin_0">Effacer
+                            </button>
+                        </div>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label for="message" class="sr-only">Message</label>
-                            <textarea aria-required="true" rows="6" cols="45" name="message" id="message"
-                                      class="form-control with-icon" placeholder="Message"></textarea>
-                            <i class="rt-icon2-pen"></i>
-                        </div>
-
-                        <button type="submit" id="contact_form_submit" name="contact_submit"
-                                class="theme_button color1 bottommargin_0">Envoyer
-                        </button>
-                        <button type="reset" id="contact_form_clear" name="contact_clear"
-                                class="theme_button inverse bottommargin_0">Effacer
-                        </button>
+                    <div v-if="form.response" class="wpcf7-response-output wpcf7-display-none wpcf7-validation-errors"
+                         style="display: block;" role="alert">
+                        <% form.response %>
                     </div>
-
                 </form>
             </div>
         </div>

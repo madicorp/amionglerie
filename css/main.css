@@ -10909,3 +10909,28 @@ isotope portfolio and gallery pos
 .checkbox-slider--b-flat input + span:before {
     box-shadow: none;
 }
+
+
+.wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors{
+    border: 1px solid #e0006c !important;
+    margin: 2em 0.5em 1em;
+    padding: 0.2em 1em;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.ajax-loader {
+    visibility: hidden;
+    display: inline-block;
+    background-image: url(/images/ajax-loader.gif);
+    width: 16px;
+    height: 16px;
+    border: none;
+    padding: 0;
+    margin: 0 0 0 4px;
+    vertical-align: middle;
+}
+
+.ajax-loader.is-active{
+    visibility: visible;
+}
