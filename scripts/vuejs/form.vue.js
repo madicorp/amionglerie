@@ -1,0 +1,1 @@
+"use strict";new Vue({delimiters:["<%","%>"],el:".contact-form",data:{},methods:{bootstrapClassSplit:function(t,e){return e+"-"+Math.floor(12%t.length)}}});
