@@ -21,6 +21,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://amionglerie.com" # the base hostname & protocol for your site
 twitter_username: segtio
 github_username:  segtio
+plugins:
+  - jekyll-sitemap
 
 # Build settings
 markdown: kramdown

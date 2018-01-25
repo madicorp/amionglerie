@@ -5,7 +5,7 @@ permalink: /contact/
 menu: contact
 ---
 <div id="contact">
-    <section id="map" class="ds" v-bind:data-address="contact.senegal.address">
+    <section id="map" class="ds" v-bind:data-address="( contact.senegal) ? contact.senegal.address : ''">
         <!-- marker description and marker icon goes here -->
         <div class="map_marker_description">
             <h3>Ami Onglerie</h3>
@@ -20,19 +20,21 @@ menu: contact
                 <div class="col-sm-6">
                     <div class="teaser text-center">
                         <h4 class="bottommargin_20">Ami Onglerie Sénégal</h4>
-                        <% contact.senegal.contact %>
+                        <% (contact.senegal) ?  contact.senegal.contact : "" %>
                         <br>
-                        <span class="highlight"><% contact.senegal.email %></span>
-                        <br> <% contact.senegal.phone %>
+                        <span class="highlight">
+                            <% (contact.senegal) ? contact.senegal.email : "" %>
+                        </span>
+                        <br> <% (contact.senegal) ? contact.senegal.phone : "" %>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="teaser text-center">
                         <h4 class="bottommargin_20">Ami Onglerie Suisse</h4>
-                        <% contact.suisse.contact %>
+                        <% (contact.suisse) ? contact.suisse.contact : "" %>
                         <br>
-                        <span class="highlight"><% contact.suisse.email %></span>
-                        <br> <% contact.suisse.phone %>
+                        <span class="highlight"><% (contact.suisse) ? contact.suisse.email : "" %></span>
+                        <br> <% (contact.suisse) ? contact.suisse.phone : "" %>
                     </div>
                 </div>
             </div>
@@ -47,61 +49,67 @@ menu: contact
                     <h2 class="muellerhoff topmargin_5 bottommargin_50 highlight">Un Message</h2>
                     <div class="row">
                         <form v-on:submit.prevent="onSubmit" class="contact-form">
-                        <div class="form-group">
-                            <label for="name" class="sr-only">Prénom et nom
-                                <span class="required">*</span>
-                            </label>
-                            <input type="text" aria-required="true"
-                                   v-model="form.name"
-                                   size="30" value="" name="name" id="name"
-                                   class="form-control text-center"
-                                   placeholder="Prénom et nom">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone" class="sr-only">Téléphone
-                                <span class="required">*</span>
-                            </label>
-                            <input type="text" aria-required="true"
-                                   v-model="form.phone"
-                                   size="30" value="" name="phone" id="phone"
-                                   class="form-control text-center"
-                                   placeholder="Téléphone">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone" class="sr-only">Email
-                                <span class="required">*</span>
-                            </label>
-                            <input type="text" aria-required="true"
-                                   v-model="form.email"
-                                   size="30" value="" name="email" id="email"
-                                   class="form-control text-center"
-                                   placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone" class="sr-only">Objet
-                                <span class="required">*</span>
-                            </label>
-                            <input type="text" aria-required="true"
-                                   v-model="form.objet"
-                                   size="30" value="" name="objet" id="objet"
-                                   class="form-control text-center"
-                                   placeholder="Objet">
-                        </div>
-                        <div class="form-group bottommargin_30">
-                            <label for="message" class="sr-only">Message</label>
-                            <textarea aria-required="true" rows="6"
-                                      v-model="form.message"
-                                      cols="45" name="message" id="message"
-                                      class="form-control text-center"
-                                      placeholder="Message"></textarea>
-                        </div>
-                        <button  type="submit" id="contact_form_submit" name="contact_submit"
-                                class="theme_button color1">Envoyer
-                        </button>
-                        <span class="ajax-loader"></span>
-                        <button type="reset" id="contact_form_clear" name="contact_clear"
-                                class="theme_button inverse bottommargin_0">Effacer
-                        </button>
+                            <div class="form-group">
+                                <label for="name" class="sr-only">Prénom et nom
+                                    <span class="required">*</span>
+                                </label>
+                                <input type="text" aria-required="true"
+                                       v-model="form.name"
+                                       required
+                                       size="30" value="" name="name" id="name"
+                                       class="form-control text-center"
+                                       placeholder="Prénom et nom">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="sr-only">Téléphone
+                                    <span class="required">*</span>
+                                </label>
+                                <input type="text" aria-required="true"
+                                       v-model="form.phone"
+                                       required
+                                       size="30" value="" name="phone" id="phone"
+                                       class="form-control text-center"
+                                       placeholder="Téléphone">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="sr-only">Email
+                                    <span class="required">*</span>
+                                </label>
+                                <input type="email" aria-required="true"
+                                       v-model="form.email"
+                                       required
+                                       size="30" value="" name="email" id="email"
+                                       class="form-control text-center"
+                                       placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="sr-only">Objet
+                                    <span class="required">*</span>
+                                </label>
+                                <input type="text" aria-required="true"
+                                       v-model="form.objet"
+                                       size="30" value="" name="objet" id="objet"
+                                       class="form-control text-center"
+                                       placeholder="Objet">
+                            </div>
+                            <div class="form-group bottommargin_30">
+                                <label for="message" class="sr-only">Message</label>
+                                <textarea aria-required="true" rows="6"
+                                          v-model="form.message"
+                                          cols="45" name="message" id="message"
+                                          class="form-control text-center"
+                                          placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit" id="contact_form_submit"
+                                    name="contact_submit"
+                                    class="g-recaptcha theme_button color1"
+                                    data-sitekey="6LeGlEIUAAAAACO2bIjYZcOj5crZzz833dv9rdCU">
+                                Envoyer
+                            </button>
+                            <span class="ajax-loader"></span>
+                            <button type="reset" id="contact_form_clear" name="contact_clear"
+                                    class="theme_button inverse bottommargin_0">Effacer
+                            </button>
                     </div>
                     <div v-if="form.response" class="wpcf7-response-output wpcf7-display-none wpcf7-validation-errors"
                          style="display: block;" role="alert">

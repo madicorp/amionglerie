@@ -10,20 +10,20 @@
             <div class="col-md-4">
                 <p class="bottommargin_20">
                     <span class="grey fontsize_12 text-uppercase bold">addresse:</span>
-                    <br> <% contact.senegal.address %>
-                    <br> <% contact.suisse.address %>
+                    <br> <% (contact.senegal) ? contact.senegal.address : "" %>
+                    <br> <% (contact.suisse) ?  contact.suisse.address : "" %>
                 </p>
                 <p class="bottommargin_20">
                     <span class="grey fontsize_12 text-uppercase bold">appelez nous:</span>
-                    <br> <% contact.senegal.phone %>
-                    <br> <% contact.suisse.phone %>
+                    <br> <% (contact.senegal) ? contact.senegal.phone : "" %>
+                    <br> <% (contact.suisse) ?  contact.suisse.phone : "" %>
                 </p>
                 <p class="bottommargin_0">
                     <span class="grey fontsize_12 text-uppercase bold">Email:</span>
                     <br>
                     <a href="mainto:info@ami-onglerie.net">
-                        <em><% contact.senegal.email %></em><br>
-                        <em><% contact.suisse.email %></em>
+                        <em><% (contact.senegal) ? contact.senegal.email : "" %></em><br>
+                        <em><% (contact.suisse) ? contact.suisse.email : "" %></em>
                     </a>
                 </p>
             </div>
@@ -83,8 +83,10 @@
                                 <i class="rt-icon2-pen"></i>
                             </div>
 
-                            <button type="submit" id="contact_form_submit" name="contact_submit"
-                                    class="theme_button color1 bottommargin_0">Envoyer
+                            <button type="submit"
+                                    id="contact_form_submit" name="contact_submit"
+                                    class="g-recaptcha theme_button color1 bottommargin_0"
+                                    data-sitekey="6LeGlEIUAAAAACO2bIjYZcOj5crZzz833dv9rdCU">Envoyer
                             </button>
                             <span class="ajax-loader"></span>
                             <button type="reset" id="contact_form_clear" name="contact_clear"

@@ -12,20 +12,7 @@ new Vue({
             message: "",
             response: ""
         },
-        contact: {
-            senegal: {
-                contact: "",
-                address: "",
-                phone: "",
-                email: ""
-            },
-            suisse: {
-                contact: "",
-                address: "",
-                phone: "",
-                email: ""
-            }
-        }
+        contact: {}
     },
     firebase: {
         contact: {
@@ -42,7 +29,7 @@ new Vue({
             let that = this;
             let form = this.form;
             Email.send(form.email,
-                "segito10@gmail.com",
+                "info@amionglerie.com",
                 form.objet,
                 `<strong>formulaire du site amionglerie</strong> \n \
                 <strong>nom</strong> : ${form.name}\n \
